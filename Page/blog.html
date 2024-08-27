@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/image/avatar.png" />
+    <link rel="stylesheet" type="text/css" href="/static/css/header.css" />
+    <title>Blog</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/static/image/avatar.png" alt="logo">
+            <div class="text">
+                <p>Samy DURAND</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <form class="form" action="/" method="get">
+                <button class="button">A Propos</button>
+            </form>
+            <form class="form  border-left" action="/mes_experience_professionel" method="get">
+                <button class="button">Mes Experiences Professionel</button>
+            </form> 
+            <form class="form  border-left" action="/blog" method="get">
+                <button class="button active">Blog</button>
+            </form>
+            <form class="form  border-left" action="/contact" method="get">
+                <button class="button">Contact</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="all-article">
+            <div class="article">
+                <img src="/static/image/shinken.png" alt="image article">
+                <div>
+                    <p class="title">Titre</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,</p>
+                </div>
+                <form action="/blog/article?numero=1" method="post">
+                    <button>Voir l'article</button>
+                </form>
+            </div>
+            <hr>
+            <div class="article">
+                <img src="/static/image/shinken.png" alt="image article">
+                <div>
+                    <p class="title">Titre</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,</p>
+                </div>
+                <form action="/blog/article?numero=1" method="post">
+                    <button>Voir l'article</button>
+                </form>
+            </div>
+            <hr>
+            <div class="article">
+                <img src="/static/image/shinken.png" alt="image article">
+                <div>
+                    <p class="title">Titre</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,</p>
+                </div>
+                <form action="/blog/article?numero=1" method="post">
+                    <button>Voir l'article</button>
+                </form>
+            </div>
+            <hr>
+            <div class="article">
+                <img src="/static/image/shinken.png" alt="image article">
+                <div>
+                    <p class="title">Titre</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,</p>
+                </div>
+                <form action="/blog/article?numero=1" method="post">
+                    <button>Voir l'article</button>
+                </form>
+            </div>
+            <hr>
+            <div class="article">
+                <img src="/static/image/shinken.png" alt="image article">
+                <div>
+                    <p class="title">Titre</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,</p>
+                </div>
+                <form action="/blog/article?numero=1" method="post">
+                    <button>Voir l'article</button>
+                </form>
+            </div>
+            <hr>
+            <div class="page">1</div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        background-color: rgb(32, 32, 32);
+        font-family: system-ui;
+        color: white;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .all-article{
+        margin: 4%;
+        border-radius: 15px;
+        background-color: rgb(60, 60, 60);
+        width: 95em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .all-article .article{
+        height: 15em;
+        margin: 2%;
+        width: 90em;
+        display: flex;
+        justify-content:baseline;
+        align-items: center;
+    }
+    .all-article hr{
+        width: 80%;
+        border: solid 1px rgb(125, 125, 125);
+    }
+    .all-article .article img{
+        height: 95%;
+        width: 16%;
+        margin: 1%;
+    }
+    .all-article .article form {
+        width: 30%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    .all-article .article button{
+        margin-top: 3%;
+        border: #cec936 solid 1px;
+        background: none;
+        width: 50%;
+        height: 60%;
+        font-size: 100%;
+        padding: 1.5%;
+        border-radius: 15px;
+        color: #cec936;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12%;
+    }
+    .all-article .article .title{
+        font-size: 200%;
+    }
+</style>

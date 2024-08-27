@@ -1,0 +1,75 @@
+.header{
+    padding: 1% 2% 1% 2%;
+    margin: 1% 2% 0% 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(7, 7, 7, 0.3);
+    border-radius: 15px;
+    color: white;
+}
+
+.header .form {
+    display: flex;
+    justify-content: center;
+    padding: 0% 5% 0% 5%;
+}
+
+.header .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 60%;
+}
+
+.header .button-container .button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 120%;
+}
+
+.header .button-container .border-left {
+    border-left: gray solid 1px;
+}
+
+.header .button-container .button.active {
+    text-decoration: underline #cec936;
+    text-underline-offset : 8px;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.header .logo p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+}
+
+.header .logo img{
+    width: 25%;
+}
+
+.header .logo .text{
+    display: inline-block;
+    margin: 0% 20% 0%;
+}
+
+.header .logo .text p {
+    overflow: hidden;
+    font-size: 1.5rem;
+    border-right: 0.15em solid #cec936;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end);
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

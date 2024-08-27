@@ -1,0 +1,206 @@
+body{
+    background-color: rgb(32, 32, 32);
+    font-family: system-ui;
+    color: white;
+    }
+
+    .container{
+        display: flex;
+        padding: 3%;
+        justify-content: space-between;
+    }
+
+    .container .left{
+        border-radius: 15px;
+        background-color: rgb(48, 48, 48);
+        height: 100%;
+        width: 25%;
+        position: sticky;
+        bottom: 1rem;
+        align-self: flex-end;
+    }
+
+    .left .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 20% 5% 20%;
+        border-radius: 15px;
+    }
+
+    .left .logo-container p{
+        margin: 0;
+        padding: 1%;
+    }
+
+    .left .logo-container .title{
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .left hr{
+        border: solid 1px rgb(125, 125, 125);
+        width: 80%;
+    }
+
+    .left .logo-container .subtitle{
+        font-size: 80%;
+        background-color: rgb(64, 64, 64);
+        padding: 10px;
+        color: lightgray;
+        border-radius: 5px;
+        margin-bottom: 2%;
+    }
+
+    .left .logo-container img {
+        background-color: white;
+        margin: 5%;
+        border-radius: 20px;
+    }
+
+    .left .information{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .left .information .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .left .information .info .title{
+        font-size: 120%;
+        padding-bottom: 2%;
+        color: darkgray;
+    }
+
+    .left .information .info p{
+        margin: 0;
+    }
+
+    .left .information .info .subtitle{
+        font-size: 80%;
+        background-color: rgb(64, 64, 64);
+        padding: 10px;
+        color: lightgray;
+        border-radius: 5px;
+        margin-bottom: 2%;
+        border: solid 1px #cec936;
+
+    }
+    .left svg {
+        padding-top: 50%;
+    }
+
+    .container .right{
+        border-radius: 15px;
+        background-color: rgb(48, 48, 48);
+        min-height: 54.3em;
+        width: 70%;
+    }
+    .right .content .title {
+        color: #ffffff;
+        padding: 5% 5% 5% 0%;
+        font-size: 180%;
+    }
+    .right .content .title .underline{
+        width: 10%;
+        border: solid 2px #cec936;    
+        border-radius: 5px;
+        margin-top: 1%;
+    }
+    .right .content {
+        padding-top: 2%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    .right .text-container{
+        width: 90%;
+    }
+
+    .carrousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1%;
+    }
+   .carrousel{
+        height: 10%;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 1000px;
+        list-style-type: none;
+   }
+   .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1%;
+        padding: 1%;
+        width: 8em;
+        height: 8em;
+        opacity: .3;
+        margin: 0% 5% 0% 5%;
+        background-color: rgb(48, 48, 48);
+        border-radius: 15px;
+   }
+
+   .card img{
+        width: 60%;
+        height: 60%;
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 5%;
+   }
+
+   .card p {
+        margin: 0;
+   }
+
+   .card.active .name {
+        font-weight: 700;
+        font-size: 80%;
+   }
+
+   .card .name {
+        font-weight: 700;
+        font-size: 60%;
+   }
+
+   .card.active .contract {
+        font-size: 80%;
+        background-color: rgb(64, 64, 64);
+        padding: 2%;
+        color: lightgray;
+        border-radius: 5px;
+        margin: 2%;
+   }
+
+   .card .contract {
+        font-size: 60%;
+        background-color: rgb(64, 64, 64);
+        padding: 2%;
+        color: lightgray;
+        border-radius: 5px;
+        margin: 2%;
+   }
+
+    .card.active {
+        width: 10em;
+        height: 10em;
+        opacity: 1;
+   }
+   .right .content .text-container .text{
+        padding-left: 2%
+   }
