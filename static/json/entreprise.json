@@ -1,0 +1,32 @@
+{
+    "Entreprise":[
+        {
+            "Id": 1,
+            "Name": "Shinken Solutions",
+            "Image": "shinken.png",
+            "Contract": "Stage de 6 semaines",
+            "Lien": "https://www.shinken-enterprise.com/",
+            "Creation": "2013",
+            "Creator": "Jean Gabès et Jean-Paul Harnisch",
+            "Dirigeant": "Anis Zouaoui",
+            "Localisation": "33370 Artigues-près-Bordeaux",
+            "Activite": "Surveillance système et réseau",
+            "Description": "Shinken est une application de surveillance système et réseau. Elle surveille les hôtes et services spécifiés, alertant lorsque les systèmes vont mal et quand ils vont mieux. Elle a pour but d'apporter une supervision distribuée et hautement disponible, facile à mettre en place.<br><br>Shinken Solutions a été créée en 2013 par Jean Gabès et Jean-Paul Harnisch. L'entreprise développe une solution de supervision des différents systèmes informatiques d'une organisation. La solution Shinken permet de superviser la disponibilité des systèmes informatiques en continu et de détecter en temps réel les problèmes, tout en aidant à leurs résolutions avant qu'ils n'impactent les utilisateurs.<br><br>En 2023, Shinken Solutions, l'entreprise qui développe Shinken, a été acquise par Adservio Group. Adservio Group, représentée par AD Holding et son gérant Anis ZOUAOUI, est désormais le président de Shinken Solutions.",
+            "Experience": "Mon expérience dans cette entreprise est du a un stage de 6 semaines, de juin 2024 a juillet 2024, pour valider ma 2e année de licence informatique au sein d'Ynov. <br><br>Durant mon stage de 6 semaines, j'ai réalisé plusieurs nouvelles fonctionnalités pour le site web, fonctionnalités qui ont été ajouter à la nouvelle mis à jour. Ce qui m'a permis de contribuer à l'amélioration de la solution et de comprendre le fonctionnement d'une entreprise de développement web, qui fonctionne en méthode agile.<br><br>De plus, l'ambiance au sein de l'entreprise est excellente, j'ai été très bien accueilli et vite intégrer. J'ai travaillé en collaboration avec plusieurs autre employé, ce qui m'a permis de me sentir utile dans l'entreprise. "
+        },
+        {
+            "Id": 2,
+            "Name": "Centre des finances public",
+            "Image": "DGFiP.png",
+            "Contract": "Vacataire de 6 semaines",
+            "Lien": "http://economie.gouv.fr",
+            "Creation": "1518",
+            "Creator": "Jacques de Beaune",
+            "Dirigeant": "Bruno Le Maire",
+            "Localisation": "33000 Melun",
+            "Activite": "Service Amendes",
+            "Description": "Le ministère des finances est l'institution gouvernementale chargée de gérer les finances publiques, il s'occupe de collecter les impôts, de payer les dépenses de l'État, d'établir le budget annuel et de s'assurer de son équilibre. De définir la politique économique, il joue un rôle central dans la mise en place des orientations économiques d'un pays, en régulant l'activité économique, en contrôlant l'inflation et en favorisant la croissance. De surveiller les marchés financiers, il veille au bon fonctionnement des marchés financiers et assure la stabilité du système bancaire.<br><br>En résumé, le ministère des finances est le gardien des finances publiques et le moteur de la politique économique d'un pays.<br><br>Un centre des amendes est un organisme qui centralise le traitement des infractions et délits pour lesquelles une amende est due. Il s'occupe de réceptionner les infractions relevées par les forces de l'ordre (police, gendarmerie) ou par des systèmes automatisés (radars, caméras). De notifier les amendes aux contrevenants. De gérer les paiements des amendes. Et informer les contrevenants sur leurs droits et sur les modalités de paiement.",
+            "Experience": "Mon expérience au sein de cette administration publique dura 6 semaines, de Mai 2023 à Juin 2023, en contrat vacataire pour un job d'été.<br><br>Durant ces 6 semaines, j'ai réalisé plusieurs tâches afin d'aider les fonctionnaires du centre des amendes de Melun. J'ai pu me rentrer utile et comprendre le fonctionnement d'une administration publique. <br><br>Pour ce qui s'agit de l'ambiance au sein de ce centre, tout le monde s'entendait parfaitement, une 'réunion' autour d'un café était organisée tous les matins afin de discuter et de garder le lien entre les fonctionnaires."
+        }
+    ]
+}

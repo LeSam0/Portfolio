@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/static/image/avatar.png" />
     <link rel="stylesheet" type="text/css" href="/static/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="/static/css/blog.css" />
-    <title>Blog</title>
+    <title>Projet</title>
 </head>
-<script src="/static/js/blog.js"></script>
-<body onload="LoadPage()">
+<body>
     <div class="header">
         <div class="logo">
             <img src="/static/image/avatar.png" alt="logo">
@@ -19,23 +17,37 @@
         </div>
         <div class="button-container">
             <form class="form" action="/a_propos" method="get">
-                <button class="button">A Propos</button>
+                <button class="button active">A Propos</button>
             </form>
             <form class="form  border-left" action="/mes_experience_professionel" method="get">
                 <button class="button">Mes Experiences Professionel</button>
             </form> 
             <form class="form  border-left" action="/blog" method="get">
-                <button class="button active">Blog</button>
+                <button class="button">Blog</button>
             </form>
             <form class="form  border-left" action="/contact" method="get">
                 <button class="button">Contact</button>
             </form>
         </div>
-    </div>
-    <div class="container">
-        <div class="all-article">
-            
-        </div>
+    </div> 
+    <div class="dev">
+        EN COURS DE DEV
     </div>
 </body>
 </html>
+<style>
+    body{
+        background-color: rgb(32, 32, 32);
+        font-family: system-ui;
+        color: white;
+    }
+    .dev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50em;
+        margin: 4%;
+        height: 15em;
+        font-size: 200%;
+    }
+</style>
