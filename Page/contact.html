@@ -21,7 +21,7 @@
                 <button class="button">A Propos</button>
             </form>
             <form class="form  border-left" action="/mes_experience_professionel" method="get">
-                <button class="button">Mes Experiences Professionel</button>
+                <button class="button">Mes Expériences Professionnelle</button>
             </form> 
             <form class="form  border-left" action="/blog" method="get">
                 <button class="button">Blog</button>
@@ -33,7 +33,7 @@
     </div>
     <div class="container">
         <div class="left">
-            <p class="title"><b>Contactez Moi</b></p>
+            <p class="title"><b>Contactez-Moi</b></p>
             <p class="text">Tu as un projet, une question ou juste envie de discuter ? N'hésite pas à me contacter ! Je suis joignable par mail, téléphone ou via le formulaire ci-contre.</p>
             <div class="info">
                 <div class="logo-container">
@@ -59,11 +59,11 @@
         </div>
         <div class="right">
             <form onsubmit="sendContact(event)" class="form">
-                <input id="Name" type="text" class="input" placeholder="Entrez votre nom et prénom" required>
-                <input id="Email" type="email" class="input" placeholder="Entrez votre addresse mail" required>
+                <input id="Name" type="text" class="input" placeholder="Entrez votre nom et prénom*" required>
+                <input id="Email" type="email" class="input" placeholder="Entrez votre addresse mail*" required>
                 <input id="Phone" type="text" class="input" placeholder="Entrez votre numéro de téléphone" maxlength="10" minlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-                <input id="Object" type="text" class="input" placeholder="Entrez l'object de ce message" required>
-                <textarea id="Message" type="text" id="scrollbar" class="input message" placeholder="Entrez votre message" required></textarea>
+                <input id="Object" type="text" class="input" placeholder="Entrez l'object de ce message*" required>
+                <textarea id="Message" type="text" id="scrollbar" class="input message" placeholder="Entrez votre message*" required></textarea>
                 <input type="submit" class="submit" value="Envoyer">
             </form>
         </div>

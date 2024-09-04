@@ -195,7 +195,7 @@ func SendData(w http.ResponseWriter, r *http.Request) {
 
 func GetData() []Entreprise {
 	entreprises := []Entreprise{
-		Entreprise{
+		{
 			Id:           1,
 			Name:         "Shinken Solutions",
 			Image:        "shinken.png",
@@ -209,7 +209,7 @@ func GetData() []Entreprise {
 			Description:  "Shinken est une application de surveillance système et réseau. Elle surveille les hôtes et services spécifiés, alertant lorsque les systèmes vont mal et quand ils vont mieux. Elle a pour but d'apporter une supervision distribuée et hautement disponible, facile à mettre en place.<br><br>Shinken Solutions a été créée en 2013 par Jean Gabès et Jean-Paul Harnisch. L'entreprise développe une solution de supervision des différents systèmes informatiques d'une organisation. La solution Shinken permet de superviser la disponibilité des systèmes informatiques en continu et de détecter en temps réel les problèmes, tout en aidant à leurs résolutions avant qu'ils n'impactent les utilisateurs.<br><br>En 2023, Shinken Solutions, l'entreprise qui développe Shinken, a été acquise par Adservio Group. Adservio Group, représentée par AD Holding et son gérant Anis ZOUAOUI, est désormais le président de Shinken Solutions.",
 			Experience:   "Mon expérience dans cette entreprise est du a un stage de 6 semaines, de juin 2024 a juillet 2024, pour valider ma 2e année de licence informatique au sein d'Ynov. <br><br>Durant mon stage de 6 semaines, j'ai réalisé plusieurs nouvelles fonctionnalités pour le site web, fonctionnalités qui ont été ajouter à la nouvelle mis à jour. Ce qui m'a permis de contribuer à l'amélioration de la solution et de comprendre le fonctionnement d'une entreprise de développement web, qui fonctionne en méthode agile.<br><br>De plus, l'ambiance au sein de l'entreprise est excellente, j'ai été très bien accueilli et vite intégrer. J'ai travaillé en collaboration avec plusieurs autre employé, ce qui m'a permis de me sentir utile dans l'entreprise. ",
 		},
-		Entreprise{
+		{
 			Id:           2,
 			Name:         "Centre des finances public",
 			Image:        "DGFiP.png",
@@ -230,7 +230,7 @@ func GetData() []Entreprise {
 
 func GetDataPortfolio() []Portfolio {
 	projets := []Portfolio{
-		Portfolio{
+		{
 			Name:  "LifeManager",
 			Id:    1,
 			Type:  "Application",
@@ -242,21 +242,45 @@ func GetDataPortfolio() []Portfolio {
 
 func GetDataBlog() []Article {
 	articles := []Article{
-		Article{
+		{
 			Id:      1,
 			Name:    "Certification Web",
 			Date:    "14/06/2024",
 			Image:   "certification.png",
-			Context: "Validation de la certification 'Intégrer les règles et le vocabulaire assurance qualité web dans sa pratique professionnelle', certification passé dans le cadre de mes études au sein d'ynov sur la plateforme Opquast.",
-			Text:    "Durant ma deuxième année, j'ai eu l'occasion de passer un certification web sur la plateforme Opquast. Après plusieurs mois d'entrainement, j'ai réaliser l'examen final et l'ai obtenue le 14 juin 2024 avec une note de 750/1000. L'examen final était totalement différent des entrainement et bien plus tricky.<br><br>Cette certification ne sers pas a grand chose pour le moment puisque je souhaite m'orianter en cybersécurité, mais elle reste une bonne expérience afin de pouvoir en passer d'autre en cybersécurité.",
+			Context: "Validation de la certification 'Intégré les règles et le vocabulaire assurance qualité web dans sa pratique professionnelle', certification passée dans le cadre de mes études au sein d'Ynov sur la plateforme Opquast.",
+			Text:    "Durant ma deuxième année, j'ai eu l'occasion de passer une certification web sur la plateforme Opquast. Après plusieurs mois d'entraînement, j'ai réalisé l'examen final et l'ai obtenue le 14 juin 2024 avec une note de 750/1000. L'examen final était totalement différent des entraînements et bien plus tricky.<br><br>Cette certification ne sert pas à grand-chose pour le moment puisque je souhaite m'orienter en cybersécurité, mais elle reste une bonne expérience afin de pouvoir en passer d'autre en cybersécurité.",		
 		},
-		Article{
+		{
 			Id:      2,
+			Name:    "Angular",
+			Date:    "02/07/2024",
+			Image:   "angular.png",
+			Context: "Durant mon stage, j'ai eu l'occasion de découvrir un nouveau framework JavaScript, Angular.",
+			Text:    "Avant de commencer ce stage, j'avais déjà entendu parler d'Angular, mais je n'en avais qu'une vague idée. J'étais plus familier avec JavaScript.<br><br>Pour développer lors de mon stage, j'ai donc eu l'occasion d'utiliser Angular. Au début, j'ai un peu galéré, mais très vite j'ai compris comme cela fonctionnais. Par contre comme nous ajoutions du HTML grâce à du Angular, certaines des fonctionnalités que j'ai voulu faire, mon donnés un peu de fils à retordre. J'ai quand même réussi, en contournant le problème, à créer mes fonctionnalités.",		
+		},
+		{
+			Id:      3,
+			Name:    "Pycharm",
+			Date:    "18/07/2024",
+			Image:   "pycharm.png",
+			Context: "Durant mon stage, j'ai dû abandonner Visual Studio Code pour Pycharm. IDE que j'avais déjà utilisé, mais jamais de manière aussi pousser.",
+			Text:    "J'ai dû apprendre tous ses raccourcis et comprendre toutes les fonctionnalités qui sont proposées par cet IDE. Cela m'a pris un moment, mais à l'heure actuelle, je pense avoir compris l'essentiel pouvoir travail au mieux pendant mon stage. Durant cette prise de connaissance certaines choses comme le déploiement ou encore la synchronisation avec git, mon fascinés. Ce sont des fonctionnalités que je connaissais, mais que je n'avais jamais utilisé auparavant.<br><br>Dans l'ensemble, grâce à ce stage, j'ai pu apprendre à utiliser un nouvel IDE et je songe à passer sur les IDEs JetBrain et lâcher ce vieux VS Code, mais cela reste encore à voir.",
+		},
+		{
+			Id:      4,
 			Name:    "Bilan de stage",
 			Date:    "26/07/2024",
 			Image:   "stage.png",
-			Context: "Bilan de mon stage, de 6 semaines, de fin de 2e années d'étude en formation informatique, au sein de l'entreprise Shinken Solution.<br><br>Entreprise créatrice de la solution shinken, Solution de surveillance de systèmes et réseaux en interface web.",
-			Text:    "Durant mon stage au sein de l'entreprise, j'ai pu contribuer à l'amélioration de la solution, en réalisant plusieurs nouvelles fonctionnalités pour le site, fonctionnalités qui ont été ensuite ajouter à la nouvelle mis à jour. J'ai donc pu mettre a profit mes connaissance vu en cours, et changer ma méthode de travail pour fonctionner en méthode agile dans une teams de développement.<br><br>Ce stage été passionnant et l'ambience au sein de l'entreprise est incroyable, j'ai été très bien accueilli et vite intégrer.J'ai travaillé en collaboration avec plusieurs autre employés, ce qui m'a permis de me sentir utile et chaque personne au sein de l'entreprise a beaucoup a m'apprendre.<br><br>Malgré tous c'est bon point, certaine chose pourrait être améliorer, comme l'utilisation de Teams à la place de Skype ou encore ne pas utiliser un iframe pour afficher le html.",
+			Context: "Bilan de mon stage, de 6 semaines, de fin de 2e année d'étude en formation informatique, au sein de l'entreprise Shinken Solution.<br><br>Entreprise créatrice de la solution shinken, Solution de surveillance de systèmes et réseaux en interface web.",
+			Text:    "Durant mon stage au sein de l'entreprise, j'ai pu contribuer à l'amélioration de la solution, en réalisant plusieurs nouvelles fonctionnalités pour le site, fonctionnalités qui ont été ensuite ajoutées à la nouvelle mis à jour. J'ai donc pu mettre à profit mes connaissances vu en cours, et changer ma méthode de travail pour fonctionner en méthode agile dans une teams de développement.<br><br>Ce stage était passionnant et l'ambiance au sein de l'entreprise est incroyable, j'ai été très bien accueilli et vite intégrer.J'ai travaillé en collaboration avec plusieurs autre employés, ce qui m'a permis de me sentir utile et chaque personne au sein de l'entreprise a beaucoup à m'apprendre.<br><br>Malgré tout c'est bon point, certaines choses pourraient être améliorées, comme l'utilisation de Teams à la place de Skype ou encore ne pas utiliser un iframe pour afficher le html.",
+		},
+		{
+			Id:      5,
+			Name:    "Site de Portfolio",
+			Date:    "31/08/2024",
+			Image:   "portfolio.png",
+			Context: "Ce projet ou vous êtes actuellement est un projet demandé pour ma 3e année au sein de mon école.",
+			Text:    "Pour ce projet, les demandes étaient simples, faire un site vitrine comprennent plusieurs pages, dont une page blog avec au moins 5 articles. Le type de site n'importait peu. Pourtant, je souhaitais le faire en golang, un langage que j'ai appris à Ynov et que j'affectionne. J'ai donc tout codé de A à Z, les pages HTML, et le back.<br><br>Une fois tous codé, j'ai dû le rendre disponible en ligne. Pour ça, j'ai d'abord voulu le faire sur un serveur chez moi, mais j'ai eu deux, trois problèmes avec celui-ci. J'ai donc opté pour VPS OVH. J'ai donc mis en ligne mon code (<a class='repo' href='https://github.com/LeSam0/Portfolio'>Repo Git du projet</a>), puis j'ai ouvert les ports et installer les librairies pour le code.<br><br>Malheureusement après plusieurs essais, plusieurs repos créés et faute de temps. J'avais toujours un problème de base de données et de lecture de fichier. Donc, pour contrer tout ça, j'ai regroupé tout mon code Go dans un seul fichier et mis toutes mes données en structure dans mon code.<br><br>Toutes ces solutions sont temporaires et je les réglerais par la suite. Pour le moment, j'ai pu rentrer un projet fonctionnel et qui respecte toutes les demandes, maintenant, je vais rajouter un portfolio et améliorer le site.",
 		},
 	}
 	return articles
@@ -264,21 +288,45 @@ func GetDataBlog() []Article {
 
 func GetDataArticle(id string) Article {
 	articles := []Article{
-		Article{
+		{
 			Id:      1,
 			Name:    "Certification Web",
 			Date:    "14/06/2024",
 			Image:   "certification.png",
-			Context: "Validation de la certification 'Intégrer les règles et le vocabulaire assurance qualité web dans sa pratique professionnelle', certification passé dans le cadre de mes études au sein d'ynov sur la plateforme Opquast.",
-			Text:    "Durant ma deuxième année, j'ai eu l'occasion de passer un certification web sur la plateforme Opquast. Après plusieurs mois d'entrainement, j'ai réaliser l'examen final et l'ai obtenue le 14 juin 2024 avec une note de 750/1000. L'examen final était totalement différent des entrainement et bien plus tricky.<br><br>Cette certification ne sers pas a grand chose pour le moment puisque je souhaite m'orianter en cybersécurité, mais elle reste une bonne expérience afin de pouvoir en passer d'autre en cybersécurité.",
+			Context: "Validation de la certification 'Intégré les règles et le vocabulaire assurance qualité web dans sa pratique professionnelle', certification passée dans le cadre de mes études au sein d'Ynov sur la plateforme Opquast.",
+			Text:    "Durant ma deuxième année, j'ai eu l'occasion de passer une certification web sur la plateforme Opquast. Après plusieurs mois d'entraînement, j'ai réalisé l'examen final et l'ai obtenue le 14 juin 2024 avec une note de 750/1000. L'examen final était totalement différent des entraînements et bien plus tricky.<br><br>Cette certification ne sert pas à grand-chose pour le moment puisque je souhaite m'orienter en cybersécurité, mais elle reste une bonne expérience afin de pouvoir en passer d'autre en cybersécurité.",		
 		},
-		Article{
+		{
 			Id:      2,
+			Name:    "Angular",
+			Date:    "02/07/2024",
+			Image:   "angular.png",
+			Context: "Durant mon stage, j'ai eu l'occasion de découvrir un nouveau framework JavaScript, Angular.",
+			Text:    "Avant de commencer ce stage, j'avais déjà entendu parler d'Angular, mais je n'en avais qu'une vague idée. J'étais plus familier avec JavaScript.<br><br>Pour développer lors de mon stage, j'ai donc eu l'occasion d'utiliser Angular. Au début, j'ai un peu galéré, mais très vite j'ai compris comme cela fonctionnais. Par contre comme nous ajoutions du HTML grâce à du Angular, certaines des fonctionnalités que j'ai voulu faire, mon donnés un peu de fils à retordre. J'ai quand même réussi, en contournant le problème, à créer mes fonctionnalités.",		
+		},
+		{
+			Id:      3,
+			Name:    "Pycharm",
+			Date:    "18/07/2024",
+			Image:   "pycharm.png",
+			Context: "Durant mon stage, j'ai dû abandonner Visual Studio Code pour Pycharm. IDE que j'avais déjà utilisé, mais jamais de manière aussi pousser.",
+			Text:    "J'ai dû apprendre tous ses raccourcis et comprendre toutes les fonctionnalités qui sont proposées par cet IDE. Cela m'a pris un moment, mais à l'heure actuelle, je pense avoir compris l'essentiel pouvoir travail au mieux pendant mon stage. Durant cette prise de connaissance certaines choses comme le déploiement ou encore la synchronisation avec git, mon fascinés. Ce sont des fonctionnalités que je connaissais, mais que je n'avais jamais utilisé auparavant.<br><br>Dans l'ensemble, grâce à ce stage, j'ai pu apprendre à utiliser un nouvel IDE et je songe à passer sur les IDEs JetBrain et lâcher ce vieux VS Code, mais cela reste encore à voir.",
+		},
+		{
+			Id:      4,
 			Name:    "Bilan de stage",
 			Date:    "26/07/2024",
 			Image:   "stage.png",
-			Context: "Bilan de mon stage, de 6 semaines, de fin de 2e années d'étude en formation informatique, au sein de l'entreprise Shinken Solution.<br><br>Entreprise créatrice de la solution shinken, Solution de surveillance de systèmes et réseaux en interface web.",
-			Text:    "Durant mon stage au sein de l'entreprise, j'ai pu contribuer à l'amélioration de la solution, en réalisant plusieurs nouvelles fonctionnalités pour le site, fonctionnalités qui ont été ensuite ajouter à la nouvelle mis à jour. J'ai donc pu mettre a profit mes connaissance vu en cours, et changer ma méthode de travail pour fonctionner en méthode agile dans une teams de développement.<br><br>Ce stage été passionnant et l'ambience au sein de l'entreprise est incroyable, j'ai été très bien accueilli et vite intégrer.J'ai travaillé en collaboration avec plusieurs autre employés, ce qui m'a permis de me sentir utile et chaque personne au sein de l'entreprise a beaucoup a m'apprendre.<br><br>Malgré tous c'est bon point, certaine chose pourrait être améliorer, comme l'utilisation de Teams à la place de Skype ou encore ne pas utiliser un iframe pour afficher le html.",
+			Context: "Bilan de mon stage, de 6 semaines, de fin de 2e année d'étude en formation informatique, au sein de l'entreprise Shinken Solution.<br><br>Entreprise créatrice de la solution shinken, Solution de surveillance de systèmes et réseaux en interface web.",
+			Text:    "Durant mon stage au sein de l'entreprise, j'ai pu contribuer à l'amélioration de la solution, en réalisant plusieurs nouvelles fonctionnalités pour le site, fonctionnalités qui ont été ensuite ajoutées à la nouvelle mis à jour. J'ai donc pu mettre à profit mes connaissances vu en cours, et changer ma méthode de travail pour fonctionner en méthode agile dans une teams de développement.<br><br>Ce stage était passionnant et l'ambiance au sein de l'entreprise est incroyable, j'ai été très bien accueilli et vite intégrer.J'ai travaillé en collaboration avec plusieurs autre employés, ce qui m'a permis de me sentir utile et chaque personne au sein de l'entreprise a beaucoup à m'apprendre.<br><br>Malgré tout c'est bon point, certaines choses pourraient être améliorées, comme l'utilisation de Teams à la place de Skype ou encore ne pas utiliser un iframe pour afficher le html.",
+		},
+		{
+			Id:      5,
+			Name:    "Site de Portfolio",
+			Date:    "31/08/2024",
+			Image:   "portfolio.png",
+			Context: "Ce projet ou vous êtes actuellement est un projet demandé pour ma 3e année au sein de mon école.",
+			Text:    "Pour ce projet, les demandes étaient simples, faire un site vitrine comprennent plusieurs pages, dont une page blog avec au moins 5 articles. Le type de site n'importait peu. Pourtant, je souhaitais le faire en golang, un langage que j'ai appris à Ynov et que j'affectionne. J'ai donc tout codé de A à Z, les pages HTML, et le back.<br><br>Une fois tous codé, j'ai dû le rendre disponible en ligne. Pour ça, j'ai d'abord voulu le faire sur un serveur chez moi, mais j'ai eu deux, trois problèmes avec celui-ci. J'ai donc opté pour VPS OVH. J'ai donc mis en ligne mon code (<a class='repo' href='https://github.com/LeSam0/Portfolio'>Repo Git du projet</a>), puis j'ai ouvert les ports et installer les librairies pour le code.<br><br>Malheureusement après plusieurs essais, plusieurs repos créés et faute de temps. J'avais toujours un problème de base de données et de lecture de fichier. Donc, pour contrer tout ça, j'ai regroupé tout mon code Go dans un seul fichier et mis toutes mes données en structure dans mon code.<br><br>Toutes ces solutions sont temporaires et je les réglerais par la suite. Pour le moment, j'ai pu rentrer un projet fonctionnel et qui respecte toutes les demandes, maintenant, je vais rajouter un portfolio et améliorer le site.",
 		},
 	}
 	ids, _ := strconv.Atoi(id)
@@ -287,7 +335,7 @@ func GetDataArticle(id string) Article {
 
 func GetDataProjet(id string) Projet {
 	projet := []Projet{
-		Projet{
+		{
 			Name:  "LifeManager",
 			Id:    1,
 			Type:  "Application",
